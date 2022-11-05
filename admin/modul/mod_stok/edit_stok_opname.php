@@ -26,7 +26,7 @@ $noItem = $data['no_item'];
 
             date_default_timezone_set('Asia/Jakarta');
             $timestamp  = date('Ym'); 
-            
+            $timestamp += 1;
             $kodeStock = $timestamp.$kodeItem;
             
         ?>

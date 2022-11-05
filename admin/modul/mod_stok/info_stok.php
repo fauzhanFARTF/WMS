@@ -58,7 +58,7 @@ $query = mysqli_query($conn, "SELECT * FROM master_stock JOIN master_item on mas
                                     // echo '<td><a href=admin.php?halaman=edit_stok_opname&&id_stock=' . $data['id_stock'] . '><span class="glyphicon glyphicon-off"></a></td>'; 
                                     
                                     ?>
-                                    <td><a href="#" onclick="confirm_modal('admin.php?halaman=edit_stok&&id_stock=<?= $data['id_stock'] ?>');"><span class="glyphicon glyphicon-off"></span></a></td>
+                                    <td><a href="#" onclick="confirm_modal('admin.php?halaman=edit_stok_opname&&id_stock=<?= $data['id_stock'] ?>');"><span class="glyphicon glyphicon-off"></span></a></td>
                             <?php
                                     echo '</tr>';
                                     $no++;
@@ -82,10 +82,7 @@ $query = mysqli_query($conn, "SELECT * FROM master_stock JOIN master_item on mas
             $query = mysqli_query($conn, "SELECT max(id_stock) as last, no_item FROM master_stock");
             $data = mysqli_fetch_array($query);
             $kodeStock = $data['last'];
-            // $kodeItem = $data['no_item'];
-        
-            // mengambil angka dari kode barang terbesar, menggunakan fungsi substr
-            // dan diubah ke integer dengan (int)
+
             $urutan = (int) substr($kodeStock, 6, 3);
         
             // bilangan yang diambil ini ditambah 1 untuk menentukan nomor urut berikutnya
