@@ -15,7 +15,7 @@ $timestamp          = date('Y-m-d H:i:s');
 
 $usercreate        = $_SESSION['username'];
 
-$insert = "INSERT INTO master_stock VALUES ('$kodeStock', '$noItem','$idLoc', '$qtyAwal', 0, 0, '$qtyAwal', 0, 'on','$usercreate','$timestamp')";
+$insert = "INSERT INTO master_stock VALUES ('$kodeStock', '$noItem','$idLoc', '$qtyAwal', 0, 0, '$qtyAwal', null, 'on','$usercreate','$timestamp')";
 
 $simpan = mysqli_query($conn, $insert) or die(mysqli_error($conn));
 

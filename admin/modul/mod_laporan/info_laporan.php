@@ -49,14 +49,15 @@ include '../../../config/koneksi.php';
                         <thead>
                             <tr>
                                 <th>No.</th>
-                                <th>Tanggal</th>
-                                <th>Kode Transaksi</th>
-                                <th>User</th>
-                                <th>Alamat</th>
-                                <th>kontrakan</th>
-                                <th>Harga</th>
-                                <th>Quantity</th>
-                                <th>Subtotal</th>
+                                <th>Kode Stock</th>
+                                <th>Kode Item</th>
+                                <th>Nama Item</th>
+                                <th>No.Rak</th>
+                                <th>Stock Awal</th>
+                                <th>Qty In</th>
+                                <th>Qty Out</th>
+                                <th>Current Stock</th>
+                                <th>Actual Stock</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -70,10 +71,10 @@ include '../../../config/koneksi.php';
 
                             if (isset($_POST['cari'])) {
 
-                                $query = mysqli_query($conn, "SELECT * FROM td_pesanan JOIN tm_unit on tm_unit.id_unit = td_pesanan.id_unit JOIN tm_user ON td_pesanan.nik = tm_user.nik WHERE tanggal BETWEEN '" . $dt1 . "' and '" . $dt2 . "'") or die(mysqli_error($conn));
+                                // $query = mysqli_query($conn, "SELECT * FROM master_stock JOIN tm_unit on tm_unit.id_unit = td_pesanan.id_unit JOIN tm_user ON td_pesanan.nik = tm_user.nik WHERE no_item =  BETWEEN '" . $dt1 . "' and '" . $dt2 . "'") or die(mysqli_error($conn));
                             } else {
 
-                                $query = mysqli_query($conn, "SELECT * FROM td_pesanan JOIN tm_unit on tm_unit.id_unit = td_pesanan.id_unit JOIN tm_user ON td_pesanan.nik = tm_user.nik WHERE td_pesanan.status ='Transaksi Sudah Selesai' OR td_pesanan.status = 'Sudah Terkonfirmasi'") or die(mysqli_error($conn));
+                                $query = mysqli_query($conn, "SELECT * FROM master_stock JOIN master_item on master_stock.no_item = master_item.no_item  WHERE master_stock.status ='off'") or die(mysqli_error($conn));
                             }
                             $no = 1;
                             while ($data = mysqli_fetch_array($query)) {
@@ -81,14 +82,15 @@ include '../../../config/koneksi.php';
                             ?>
                                 <tr>
                                     <td><?php echo $no ?></td>
-                                    <td><?php echo date('d-m-Y', strtotime($data['tanggal'])) ?></td>
-                                    <td><?php echo $data['kd_transaksi'] ?></td>
-                                    <td><?php echo $data['nama_lengkap'] ?></td>
-                                    <td><?php echo $data['alamat'] ?></td>
-                                    <td><?php echo $data['title'] ?></td>
-                                    <td>Rp. <?php echo number_format($data['harga']) ?></td>
-                                    <td><?php echo $data['qty'] ?></td>
-                                    <td>Rp. <?php echo number_format($data['total_harga']) ?></td>
+                                    <td><?php echo $data['id_stock'] ?></td>
+                                    <td><?php echo $data['no_item'] ?></td>
+                                    <td><?php echo $data['name_item'] ?></td>
+                                    <td><?php echo $data['id_loc'] ?></td>
+                                    <td><?php echo $data['qty_awal'] ?></td>
+                                    <td><?php echo $data['qty_in'] ?></td>
+                                    <td><?php echo $data['qty_out'] ?></td>
+                                    <td><?php echo $data['qty_now'] ?></td>
+                                    <td><?php echo $data['qty_actual'] ?></td>
                                 <?php
                                 $no++;
                             }

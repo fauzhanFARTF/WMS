@@ -40,17 +40,27 @@ elseif ($halaman == 'cetak')
 //halaman edit
 elseif ($halaman == 'edit_user')
     include '../admin/modul/mod_user/edit_user.php';
+
 elseif ($halaman == 'edit_item')
     include '../admin/modul/mod_item/edit_item.php';
+
 elseif ($halaman == 'edit_lokasi')
     include '../admin/modul/mod_lokasi/edit_lokasi.php';
+
 elseif ($halaman == 'edit_stok')
     include '../admin/modul/mod_stok/edit_stok.php';
+
+elseif ($halaman == 'edit_stok_opname')
+    include '../admin/modul/mod_stok/edit_stok_opname.php';
+
 elseif ($halaman == 'edit_rekening')
     include '../admin/modul/mod_rekening/edit_rekening.php';
+
 elseif ($halaman == 'edit_pesanan')
     include '../admin/modul/mod_pesanan/edit_pesanan.php';
+
 elseif ($halaman == 'edit_konfirmasi')
     include 'edit_konfirmasi.php';
+
 elseif ($halaman == 'konfirmasi')
     include '../admin/modul/mod_konfirmasi/konfirmasi.php';

@@ -26,8 +26,8 @@ $query = mysqli_query($conn, "SELECT * FROM master_item ORDER BY timestamp DESC"
                                 <th>Nama Item</th>
                                 <th>Merk</th>
                                 <th>Type</th>
-                                <th>Price Buy</th>
-                                <th>Price Sell</th>
+                                <th>Harga Beli</th>
+                                <th>Harga Jual</th>
                                 <th colspan="2">
                                     <center>Action</center>
                                 </th>
@@ -47,8 +47,8 @@ $query = mysqli_query($conn, "SELECT * FROM master_item ORDER BY timestamp DESC"
                                     echo '<td>' . $data['name_item'] . '</td>';
                                     echo '<td>' . $data['merk'] . '</td>';
                                     echo '<td>' . $data['type'] . '</td>';
-                                    echo '<td>' . $data['price_buy'] . '</td>';
-                                    echo '<td>' . $data['price_sell'] . '</td>';
+                                    echo '<td> Rp. ' . number_format($data['price_buy']) . '</td>';
+                                    echo '<td> Rp. ' . number_format($data['price_sell']) . '</td>';
                                     echo '<td><a href=admin.php?halaman=edit_item&&no_item=' . $data['no_item'] . '><span class="glyphicon glyphicon-edit"></a></td>'; ?>
                                     <!-- <td><a href="#" onclick="confirm_modal('../admin/modul/mod_user/delete_user.php?id_user= <?=$data['id_user']?>');"><span class="glyphicon glyphicon-trash"></span></a></td> -->
                             <?php

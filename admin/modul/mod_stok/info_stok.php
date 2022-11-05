@@ -12,7 +12,7 @@ $query = mysqli_query($conn, "SELECT * FROM master_stock JOIN master_item on mas
         <!--   Kitchen Sink -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                Manajemen Data Stock
+                Manajemen Data Stock Opname
             </div>
             <hr>
             &nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus"></span>Tambah</button>
@@ -31,7 +31,6 @@ $query = mysqli_query($conn, "SELECT * FROM master_stock JOIN master_item on mas
                                 <th>Qty In</th>
                                 <th>Qty Out</th>
                                 <th>Current Stock</th>
-                                <th>Actual Stock</th>
                                 <th colspan="2">
                                     <center>Action</center>
                                 </th>
@@ -55,9 +54,11 @@ $query = mysqli_query($conn, "SELECT * FROM master_stock JOIN master_item on mas
                                     echo '<td>' . $data['qty_in'] . '</td>';
                                     echo '<td>' . $data['qty_out'] . '</td>';
                                     echo '<td>' . $data['qty_now'] . '</td>';
-                                    echo '<td>' . $data['qty_actual'] . '</td>';
-                                    echo '<td><a href=admin.php?halaman=edit_stok&&id_stock=' . $data['id_stock'] . '><span class="glyphicon glyphicon-edit"></a></td>'; ?>
-                                    <!-- <td><a href="#" onclick="confirm_modal('../admin/modul/mod_rekening/delete_rekening.php?no_rek= <?= $data['no_rek'] ?>  ');"><span class="glyphicon glyphicon-trash"></span></a></td> -->
+                                    echo '<td><a href=admin.php?halaman=edit_stok&&id_stock=' . $data['id_stock'] . '><span class="glyphicon glyphicon-edit"></a></td>'; 
+                                    // echo '<td><a href=admin.php?halaman=edit_stok_opname&&id_stock=' . $data['id_stock'] . '><span class="glyphicon glyphicon-off"></a></td>'; 
+                                    
+                                    ?>
+                                    <td><a href="#" onclick="confirm_modal('admin.php?halaman=edit_stok&&id_stock=<?= $data['id_stock'] ?>');"><span class="glyphicon glyphicon-off"></span></a></td>
                             <?php
                                     echo '</tr>';
                                     $no++;
@@ -166,12 +167,12 @@ $query = mysqli_query($conn, "SELECT * FROM master_stock JOIN master_item on mas
         <div class="modal-content" style="margin-top:100px;">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" style="text-align:center;">Anda yakin akan menghapus data ini.. ?</h4>
+                <h4 class="modal-title" style="text-align:center;">Anda akan memasuki mode Stock Opname</h4>
             </div>
 
             <div class="modal-footer" style="margin:0px; border-top:0px; text-align:center;">
                 <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">Cancel</button>
-                <a href="#" class="btn btn-danger btn-sm" id="delete_link">Hapus</a>
+                <a href="#" class="btn btn-danger btn-sm" id="delete_link">Yes</a>
             </div>
         </div>
     </div>
