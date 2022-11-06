@@ -2,17 +2,16 @@
 
 include '../../../config/koneksi.php';
 
-$query = mysqli_query($conn, "SELECT * FROM td_pesanan JOIN tm_user ON td_pesanan.nik = tm_user.nik JOIN tm_unit ON td_pesanan.id_unit = tm_unit.id_unit WHERE td_pesanan.status = 'Proses Pemesanan' ORDER BY td_pesanan.kd_transaksi DESC") or die(mysqli_error($conn));
+$query = mysqli_query($conn, "SELECT * FROM master_item ORDER BY timestamp DESC") or die(mysqli_error($conn));
 
 ?>
-
 
 <div class="row">
     <div class="col-md-12">
         <!--   Kitchen Sink -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                Manajemen Pesanan Kontrakan
+                Manajemen Pesanan 
             </div>
             <hr>
             &nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-primary tombolTambah" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus"></span>Tambah</button>

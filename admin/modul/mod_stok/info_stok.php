@@ -12,7 +12,7 @@ $query = mysqli_query($conn, "SELECT * FROM master_stock JOIN master_item on mas
         <!--   Kitchen Sink -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                Manajemen Data Stock Opname
+                Manajemen Data Stock
             </div>
             <hr>
             &nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus"></span>Tambah</button>

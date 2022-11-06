@@ -80,9 +80,6 @@ include "../config/session_admin.php";
                     <li>
                         <a href="#"><i class="fa fa-sitemap fa-3x"></i>Stok<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <!-- <li>
-                                <a href="?halaman=manajemen_stok"><i class="fa fa-external-link fa-3x"></i>Stok</a>
-                            </li> -->
                             <li>
                                 <a href="?halaman=manajemen_stok"><i class="fa fa-external-link fa-3x"></i>Stok</a>
                             </li>
@@ -91,6 +88,9 @@ include "../config/session_admin.php";
                     <li>
                         <a href="#"><i class="fa fa-sitemap fa-3x"></i>Transaksi<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="?halaman=manajemen_pesanan"><i class="fa fa-external-link fa-3x"></i>Barang Order</a>
+                            </li>
                             <li>
                                 <a href="?halaman=manajemen_pesanan"><i class="fa fa-external-link fa-3x"></i>Barang Masuk</a>
                             </li>

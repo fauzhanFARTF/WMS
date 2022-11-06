@@ -23,11 +23,25 @@ $noItem = $data['no_item'];
             $query2 = mysqli_query($conn, "SELECT max(id_stock) as last, no_item FROM master_stock WHERE no_item = '$noItem'");
             $data2 = mysqli_fetch_array($query2);
             $kodeItem = $data2['no_item'];
+            $kodeStock = $data2["last"];
 
             date_default_timezone_set('Asia/Jakarta');
-            $timestamp  = date('Ym'); 
-            $timestamp += 1;
-            $kodeStock = $timestamp.$kodeItem;
+            // $thblCurrent  = date('Ym'); 
+            $thblLast = (int) substr($kodeStock, 0, 6);
+            $blLast = (int) substr($kodeStock, 4, 6);
+            $thLast = (int) substr($kodeStock, 0, 4);
+
+            
+            if ($blLast + 1 == 13){
+                $blLast = '01';
+                $thLast += 1;
+                $thblNext = $thLast . $blLast;
+                echo $thblNext;
+            } else {
+                $blLast+=1;
+                $thblNext = $thLast . $blLast;
+                echo $thblNext;
+            };
             
         ?>
 
@@ -37,7 +51,7 @@ $noItem = $data['no_item'];
                 <input type="text" class="form-control" name="id_stock" value="<?= $data['id_stock']; ?>" readonly>
             </div>
             <div class="col-sm-3">
-                <input type="text" class="form-control" name="id_stock2" value="<?= $kodeStock ?>">
+                <input type="text" class="form-control" name="id_stock2" value="<?= $thblNext . $kodeItem ?>" readonly>
             </div>
         </div>
         <div class="form-group">

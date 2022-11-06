@@ -10,7 +10,7 @@ include '../../../config/koneksi.php';
         <!--   Kitchen Sink -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                Manajemen Konfirmasi
+                Laporan Stock
             </div>
             <hr>
             &nbsp;&nbsp;&nbsp;
@@ -18,7 +18,7 @@ include '../../../config/koneksi.php';
 
             <form action="" method="post">
                 <div class='pull-right'>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label class="control-label col-sm-4">Periode :</label>
                         <div class="col-md-12">
                             <input type="date" class="form-control" id="dari" name="dari">
@@ -28,6 +28,12 @@ include '../../../config/koneksi.php';
                         <label class="control-label col-sm-4">Sampai :</label>
                         <div class="col-md-12">
                             <input type="date" class="form-control" id="ke" name="ke">
+                        </div>
+                    </div> -->
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">No. Item</label>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" id="item" name="item">
                         </div>
                     </div>
                     <div class='pull-right'>
@@ -64,17 +70,19 @@ include '../../../config/koneksi.php';
                             <?php
 
                             // if (isset($_POST["tampilkan"])) {
-                            $dt1 = $_POST["dari"];
-                            $dt2 = $_POST["ke"];
+                            // $dt1 = $_POST["dari"];
+                            // $dt2 = $_POST["ke"];
+                            $item = $_POST["item"];
 
 
 
                             if (isset($_POST['cari'])) {
 
-                                // $query = mysqli_query($conn, "SELECT * FROM master_stock JOIN tm_unit on tm_unit.id_unit = td_pesanan.id_unit JOIN tm_user ON td_pesanan.nik = tm_user.nik WHERE no_item =  BETWEEN '" . $dt1 . "' and '" . $dt2 . "'") or die(mysqli_error($conn));
+                                $query = mysqli_query($conn, "SELECT * FROM master_stock JOIN master_item on master_stock.no_item = master_item.no_item  WHERE master_stock.status ='off' AND master_stock.no_item = '".$item."'") or die(mysqli_error($conn));
                             } else {
 
                                 $query = mysqli_query($conn, "SELECT * FROM master_stock JOIN master_item on master_stock.no_item = master_item.no_item  WHERE master_stock.status ='off'") or die(mysqli_error($conn));
+                                // $query = mysqli_query($conn, "SELECT * FROM master_stock JOIN master_item on master_stock.no_item = master_item.no_item  WHERE master_stock.status ='off' AND master_stock.no_item = '".$item."'") or die(mysqli_error($conn));
                             }
                             $no = 1;
                             while ($data = mysqli_fetch_array($query)) {
@@ -103,15 +111,15 @@ include '../../../config/koneksi.php';
                         <tbody>
                             <tr>
                                 <td class='msg-invoice' width='85%'>
-                                    <h4>Laporan Pemesanan Kontrakan Persada </h4>
-                                    <?php $bank = mysqli_query($conn, "SELECT * FROM tm_rekening");
+                                    <h4>Laporan Item Stock</h4>
+                                    <!-- <?php $bank = mysqli_query($conn, "SELECT * FROM tm_rekening");
                                     $bnk = mysqli_fetch_array($bank);
-                                    ?>
-                                    <a href='#' title='Kasir'>Kasir</a> | <a href='#' title=''><?php echo "$bnk[bank] - ($bnk[no_rek]) $bnk[atas_nama]" ?> </a>
+                                    ?> -->
+                                    <!-- <a href='#' title='Kasir'>Kasir</a> | <a href='#' title=''><?php echo "$bnk[bank] - ($bnk[no_rek]) $bnk[atas_nama]" ?> </a> -->
                                 </td>
                                 <td>
                                     <div class='pull-right'>
-                                        <h4><span>GRAND TOTAL : Rp.<?php echo number_format($grand) ?></span></h4>
+                                        <!-- <h4><span>GRAND TOTAL : Rp.<?php echo number_format($grand) ?></span></h4> -->
                                         <br>
 
                                     </div>
