@@ -1,3 +1,3 @@
 <?php
 header("location:");
-$domain = "http://localhost/project/";
+$domain = "http://localhost/project-local/";

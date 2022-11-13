@@ -6,18 +6,17 @@
 error_reporting(0);
 // $conn = mysqli_connect("localhost", "root", "m4suk4j4h", "kontrakan");
 include '../../../config/koneksi.php';
-$dt1 = $_POST['dar'];
-$dt2 = $_POST['ker'];
-// echo $dt1;
-// echo $dt2;
+// $dt1 = $_POST['dar'];
+// $dt2 = $_POST['ker'];
+$item = $_POST["item"];
 if (isset($_POST['cetak'])) {
 
-    $query = mysqli_query($conn, "SELECT * FROM td_pesanan JOIN td_transaksi_selesai ON td_transaksi_selesai.kd_transaksi = td_pesanan.kd_transaksi JOIN tm_unit on tm_unit.id_unit = td_pesanan.id_unit JOIN tm_user ON td_pesanan.nik = tm_user.nik WHERE tanggal BETWEEN '" . $dt1 . "' and '" . $dt2 . "'") or die(mysqli_error($conn));
+$query = mysqli_query($conn, "SELECT * FROM master_stock JOIN master_item on master_stock.no_item = master_item.no_item  WHERE master_stock.status ='off' AND master_stock.no_item = '".$item."'") or die(mysqli_error($conn));
 }
 
-if (empty($dt1) && empty($dt2)) {
+if (empty($item)) {
 
-    $query = mysqli_query($conn, "SELECT * FROM td_pesanan JOIN tm_unit on tm_unit.id_unit = td_pesanan.id_unit JOIN tm_user ON td_pesanan.nik = tm_user.nik WHERE td_pesanan.status ='Transaksi Sudah Selesai' OR td_pesanan.status = 'Sudah Terkonfirmasi'") or die(mysqli_error($conn));
+    $query = mysqli_query($conn, "SELECT * FROM master_stock JOIN master_item on master_stock.no_item = master_item.no_item  WHERE master_stock.status ='off'") or die(mysqli_error($conn));
 }
 
 ?>
@@ -62,18 +61,18 @@ if (empty($dt1) && empty($dt2)) {
                 <tbody>
                     <tr>
                         <td>
-                            <img src="..\..\..\admin\assets\img\fishing-logob.png" width="50" height="70" style="margin-top: 20px;">
-                            <h4>kontrakan PERSADA</h4>
+                            <!-- <img src="..\..\..\admin\assets\img\fishing-logob.png" width="50" height="70" style="margin-top: 20px;"> -->
+                            <h4>Report</h4>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Jl. Laos Perumahan Pasar Kemis, Kabupaten Tangerang
+                            <!-- Jl. Laos Perumahan Pasar Kemis, Kabupaten Tangerang -->
                         </td>
                     </tr>
 
                     <tr>
-                        <td>Phone: 081210252638</td>
+                        <!-- <td>Phone: 081210252638</td> -->
                     </tr>
                 </tbody>
             </table>
@@ -86,14 +85,15 @@ if (empty($dt1) && empty($dt2)) {
                 <thead>
                     <tr>
                         <th>No.</th>
-                        <th>Tanggal</th>
-                        <th>Kode Transaksi</th>
-                        <th>User</th>
-                        <th>Alamat</th>
-                        <th>kontrakan</th>
-                        <th>Harga</th>
-                        <th>Quantity</th>
-                        <th>Subtotal</th>
+                        <th>Kode Stock</th>
+                        <th>Kode Item</th>
+                        <th>Nama Item</th>
+                        <th>No.Rak</th>
+                        <th>Stock Awal</th>
+                        <th>Qty In</th>
+                        <th>Qty Out</th>
+                        <th>Current Stock</th>
+                        <th>Actual Stock</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -105,19 +105,19 @@ if (empty($dt1) && empty($dt2)) {
                         while ($data = mysqli_fetch_array($query)) {
                             $grand += $data['total_harga'];
                     ?>
-                            <tr>
-                                <td><?php echo $no ?></td>
-                                <td><?php echo date('d-m-Y', strtotime($data['tanggal'])) ?></td>
-                                <td><?php echo $data['kd_transaksi'] ?></td>
-                                <td><?php echo $data['nama_lengkap'] ?></td>
-                                <td><?php echo $data['alamat'] ?></td>
-                                <td><?php echo $data['title'] ?></td>
-                                <td>Rp. <?php echo $data['harga'] ?></td>
-                                <td><?php echo $data['qty'] ?></td>
-                                <td>Rp. <?php echo number_format($data['total_harga']) ?></td>
-                            </tr>
+                        <tr>
+                            <td><?php echo $no ?></td>
+                            <td><?php echo $data['id_stock'] ?></td>
+                            <td><?php echo $data['no_item'] ?></td>
+                            <td><?php echo $data['name_item'] ?></td>
+                            <td><?php echo $data['id_loc'] ?></td>
+                            <td><?php echo $data['qty_awal'] ?></td>
+                            <td><?php echo $data['qty_in'] ?></td>
+                            <td><?php echo $data['qty_out'] ?></td>
+                            <td><?php echo $data['qty_now'] ?></td>
+                            <td><?php echo $data['qty_actual'] ?></td>
                     <?php
-                            $no++;
+                        $no++;
                         }
                     }
                     ?>
@@ -127,15 +127,15 @@ if (empty($dt1) && empty($dt2)) {
                 <tbody>
                     <tr>
                         <td class='msg-invoice' width='85%'>
-                            <h4>Laporan Pemesanan Kontrakan</h4>
+                            <h4>Laporan Stock</h4>
                             <?php $bank = mysqli_query($conn, "SELECT * FROM tm_rekening");
                             $bnk = mysqli_fetch_array($bank);
                             ?>
-                            <a href='#' title='Kasir'>Kasir</a> | <a href='#' title=''><?php echo "$bnk[bank] - ($bnk[no_rek]) $bnk[atas_nama]" ?> </a>
+                            <!-- <a href='#' title='Kasir'>Kasir</a> | <a href='#' title=''><?php echo "$bnk[bank] - ($bnk[no_rek]) $bnk[atas_nama]" ?> </a> -->
                         </td>
                         <td>
                             <div class='pull-right'>
-                                <h4><span>GRAND TOTAL: Rp. <?php echo number_format($grand) ?></span></h4>
+                                <!-- <h4><span>GRAND TOTAL: Rp. <?php echo number_format($grand) ?></span></h4> -->
                                 <br>
 
                             </div>

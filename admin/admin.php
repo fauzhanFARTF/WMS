@@ -40,7 +40,7 @@ include "../config/session_admin.php";
 
 <body>
     <div id="wrapper">
-        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+        <nav class="navbar navbar-default navbar-cls-top" role="navigation" style="margin-bottom: 0" id="bg-color-blackshadow">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -57,7 +57,7 @@ include "../config/session_admin.php";
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li class="text-center">
-                        <img src="../admin/assets/img/fishing-logo1.png" class="user-image img-responsive" />
+                        <!-- <img src="../admin/assets/img/fishing-logo1.png" class="user-image img-responsive" /> -->
                     </li>
 
                     <li>
@@ -122,7 +122,7 @@ include "../config/session_admin.php";
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>Page</h2>
+                        <h2>Dashboard</h2>
                         <?php
                         include "content.php";
                         ?>

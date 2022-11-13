@@ -36,11 +36,11 @@ $noItem = $data['no_item'];
                 $blLast = '01';
                 $thLast += 1;
                 $thblNext = $thLast . $blLast;
-                echo $thblNext;
+                // echo $thblNext;
             } else {
                 $blLast+=1;
                 $thblNext = $thLast . $blLast;
-                echo $thblNext;
+                // echo $thblNext;
             };
             
         ?>

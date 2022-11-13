@@ -90,6 +90,13 @@ p {
   -moz-border-radius: 50px;
   border-radius: 50px;
 }
+#bg-color-blackshadow{
+  background-color: #202020;
+}
+.bg-color-blueblack{
+  background-color: rgba(18, 66, 114, 0.998);
+  /* color: black; */
+}
 .bg-color-green {
   background-color: #00ce6f;
   color: #fff;

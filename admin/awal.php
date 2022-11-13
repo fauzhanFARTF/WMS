@@ -1,7 +1,7 @@
 <?php
 include "../config/session_admin.php";
 
-echo "<h5>Welcome " . $_SESSION['username'] . " , Loveeeeeeeee to see you back. </h5>";
+echo "<h5>Welcome " . $_SESSION['username'] . " . </h5>";
 
 
 include '../config/koneksi.php';
@@ -22,7 +22,7 @@ $cuaca = json_decode($file, true);
 
 <div class="col-md-12" style="margin-top: 20px;">
     <div class="main-temp-back">
-        <div class="panel-body">
+        <div class="panel-body bg-color-blueblack">
             <div class="row">
                 <div class="col-md-12 pt-10">
                     <div class="col-xs-12"><label for="cuaca">Cuaca : </label> <span>Tangerang</span> </div>
@@ -49,7 +49,7 @@ $cuaca = json_decode($file, true);
     </div>
 </div>
 
-<div class="row">
+<!-- <div class="row">
     <div class="col-md-12">
         <br>
         <div class="col-md-3 col-sm-12 col-xs-12"><a href="?halaman=manajemen_pesanan">
@@ -134,7 +134,7 @@ $cuaca = json_decode($file, true);
             </div>
         </a>
     </div>
-</div>
+</div> -->
 
 <script src="../admin/assets/js/sweetalert2.min.js"></script>
 

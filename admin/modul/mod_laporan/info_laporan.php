@@ -86,7 +86,7 @@ include '../../../config/koneksi.php';
                             }
                             $no = 1;
                             while ($data = mysqli_fetch_array($query)) {
-                                $grand += $data['total_harga'];
+                                // $grand += $data['total_harga'];
                             ?>
                                 <tr>
                                     <td><?php echo $no ?></td>
