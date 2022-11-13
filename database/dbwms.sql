@@ -11,7 +11,7 @@
  Target Server Version : 100803 (10.8.3-MariaDB)
  File Encoding         : 65001
 
- Date: 05/11/2022 13:55:58
+ Date: 13/11/2022 17:56:34
 */
 
 SET NAMES utf8mb4;
@@ -101,18 +101,18 @@ CREATE TABLE `master_item` (
 -- Records of master_item
 -- ----------------------------
 BEGIN;
-INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT001', 'Kaos Anak Ukuran 1B', 'Mother Care', 'Pakaian Anak', 25000, 30000, 'Pcs', 'fauzan.n08', '2022-11-04 02:39:55');
-INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT002', 'Kaos Anak Ukuran 2B', 'Mother Care', 'Pakaian Anak', 26000, 31000, 'Pcs', 'fauzan.n08', '2022-11-04 02:41:03');
-INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT003', 'Kaos Anak Ukuran 3B', 'Mother Care', 'Pakaian Anak', 27000, 32000, 'Pcs', 'fauzan.n08', '2022-11-04 02:41:20');
-INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT004', 'Kaos Anak Ukuran 4B', 'Mother Care', 'Pakaian Anak', 28000, 33000, 'Pcs', 'fauzan.n08', '2022-11-04 02:42:15');
-INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT005', 'Sweeter Anak Ukuran 1B', 'Mother Care', 'Pakaian Anak', 57000, 61000, 'Pcs', 'fauzan.n08', '2022-11-04 16:34:59');
-INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT006', 'Sweeter Anak Ukuran 2B', 'Mother Care', 'Pakaian Anak', 58000, 62000, 'Pcs', 'fauzan.n08', '2022-11-04 16:35:16');
-INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT007', 'Sweeter Anak Ukuran 3B', 'Mother Care', 'Pakaian Anak', 59000, 63000, 'Pcs', 'fauzan.n08', '2022-11-04 16:37:22');
-INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT008', 'Kaos Dewasa Ukuran S', 'Polo', 'Pakaian Pria', 100000, 120000, 'Pcs', 'fauzan.n08', '2022-11-04 23:03:05');
-INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT009', 'Kaos Dewasa Ukuran M', 'Polo', 'Pakaian Pria', 100000, 120000, 'Pcs', 'fauzan.n08', '2022-11-04 23:03:11');
-INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT010', 'Kaos Dewasa Ukuran L', 'Polo', 'Pakaian Anak', 100000, 120000, 'Pcs', 'fauzan.n08', '2022-11-04 23:03:16');
-INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT011', 'Kaos Dewasa Ukuran XL', 'Polo', 'Pakaian Pria', 110000, 121000, 'Pcs', 'fauzan.n08', '2022-11-04 23:03:48');
-INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT012', 'Kaos Dewasa Ukuran XXL', 'Polo', 'Pakaian Pria', 120000, 131000, 'Pcs', 'fauzan.n08', '2022-11-05 13:34:01');
+INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT001', 'Kaos Anak Ukuran 1B', 'Mother Care', 'Pakaian Anak', 25000, 30000, 'Pcs', 'admin', '2022-11-04 02:39:55');
+INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT002', 'Kaos Anak Ukuran 2B', 'Mother Care', 'Pakaian Anak', 26000, 31000, 'Pcs', 'admin', '2022-11-04 02:41:03');
+INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT003', 'Kaos Anak Ukuran 3B', 'Mother Care', 'Pakaian Anak', 27000, 32000, 'Pcs', 'admin', '2022-11-04 02:41:20');
+INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT004', 'Kaos Anak Ukuran 4B', 'Mother Care', 'Pakaian Anak', 28000, 33000, 'Pcs', 'admin', '2022-11-04 02:42:15');
+INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT005', 'Sweeter Anak Ukuran 1B', 'Mother Care', 'Pakaian Anak', 57000, 61000, 'Pcs', 'admin', '2022-11-04 16:34:59');
+INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT006', 'Sweeter Anak Ukuran 2B', 'Mother Care', 'Pakaian Anak', 58000, 62000, 'Pcs', 'admin', '2022-11-04 16:35:16');
+INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT007', 'Sweeter Anak Ukuran 3B', 'Mother Care', 'Pakaian Anak', 59000, 63000, 'Pcs', 'admin', '2022-11-04 16:37:22');
+INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT008', 'Kaos Dewasa Ukuran S', 'Polo', 'Pakaian Pria', 100000, 120000, 'Pcs', 'admin', '2022-11-04 23:03:05');
+INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT009', 'Kaos Dewasa Ukuran M', 'Polo', 'Pakaian Pria', 100000, 120000, 'Pcs', 'admin', '2022-11-04 23:03:11');
+INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT010', 'Kaos Dewasa Ukuran L', 'Polo', 'Pakaian Anak', 100000, 120000, 'Pcs', 'admin', '2022-11-04 23:03:16');
+INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT011', 'Kaos Dewasa Ukuran XL', 'Polo', 'Pakaian Pria', 110000, 121000, 'Pcs', 'admin', '2022-11-04 23:03:48');
+INSERT INTO `master_item` (`no_item`, `name_item`, `merk`, `type`, `price_buy`, `price_sell`, `unit`, `username`, `timestamp`) VALUES ('IT012', 'Kaos Dewasa Ukuran XXL', 'Polo', 'Pakaian Pria', 120000, 131000, 'Pcs', 'admin', '2022-11-05 13:34:01');
 COMMIT;
 
 -- ----------------------------
@@ -136,13 +136,13 @@ CREATE TABLE `master_location` (
 -- Records of master_location
 -- ----------------------------
 BEGIN;
-INSERT INTO `master_location` (`id_loc`, `name_loc`, `description`, `pic`, `capacity`, `username`, `timestamp`) VALUES ('RA001', 'Rak A. No 001', 'Sebelah Atas Pojok Kiri', '2246rakbaju.jpeg', 180, 'fauzan.n08', '2022-11-04 02:28:05');
-INSERT INTO `master_location` (`id_loc`, `name_loc`, `description`, `pic`, `capacity`, `username`, `timestamp`) VALUES ('RA002', 'Rak A No. 002', 'Sebelah Kanan Rak A No. 001', '7192rakbaju.jpeg', 215, 'fauzan.n08', '2022-11-04 02:28:23');
-INSERT INTO `master_location` (`id_loc`, `name_loc`, `description`, `pic`, `capacity`, `username`, `timestamp`) VALUES ('RA003', 'Rak A No. 003', 'Sebelah Kanan Rak A No. 002', '7509rakbaju.jpeg', 193, 'fauzan.n08', '2022-11-04 02:28:33');
-INSERT INTO `master_location` (`id_loc`, `name_loc`, `description`, `pic`, `capacity`, `username`, `timestamp`) VALUES ('RA004', 'Rak A No. 004', 'Sebelah Kanan Rak A No. 003', '9378rakbaju.jpeg', 122, 'fauzan.n08', '2022-11-04 02:35:46');
-INSERT INTO `master_location` (`id_loc`, `name_loc`, `description`, `pic`, `capacity`, `username`, `timestamp`) VALUES ('RA005', 'Rak A No. 005', 'Dibawah Rak A No. 001', '4771rakbaju.jpeg', 141, 'fauzan.n08', '2022-11-04 02:34:15');
-INSERT INTO `master_location` (`id_loc`, `name_loc`, `description`, `pic`, `capacity`, `username`, `timestamp`) VALUES ('RA006', 'Rak A No. 006', 'Dibawah Rak A No. 002', '5435rakbaju.jpeg', 200, 'fauzan.n08', '2022-11-04 02:35:21');
-INSERT INTO `master_location` (`id_loc`, `name_loc`, `description`, `pic`, `capacity`, `username`, `timestamp`) VALUES ('RA007', 'Rak A No. 007', 'Dibawah Rak A No. 003', '8843rakbaju.jpeg', 137, 'fauzan.n08', '2022-11-04 02:36:44');
+INSERT INTO `master_location` (`id_loc`, `name_loc`, `description`, `pic`, `capacity`, `username`, `timestamp`) VALUES ('RA001', 'Rak A. No 001', 'Sebelah Atas Pojok Kiri', '2246rakbaju.jpeg', 180, 'admin', '2022-11-04 02:28:05');
+INSERT INTO `master_location` (`id_loc`, `name_loc`, `description`, `pic`, `capacity`, `username`, `timestamp`) VALUES ('RA002', 'Rak A No. 002', 'Sebelah Kanan Rak A No. 001', '7192rakbaju.jpeg', 215, 'admin', '2022-11-04 02:28:23');
+INSERT INTO `master_location` (`id_loc`, `name_loc`, `description`, `pic`, `capacity`, `username`, `timestamp`) VALUES ('RA003', 'Rak A No. 003', 'Sebelah Kanan Rak A No. 002', '7509rakbaju.jpeg', 193, 'admin', '2022-11-04 02:28:33');
+INSERT INTO `master_location` (`id_loc`, `name_loc`, `description`, `pic`, `capacity`, `username`, `timestamp`) VALUES ('RA004', 'Rak A No. 004', 'Sebelah Kanan Rak A No. 003', '9378rakbaju.jpeg', 122, 'admin', '2022-11-04 02:35:46');
+INSERT INTO `master_location` (`id_loc`, `name_loc`, `description`, `pic`, `capacity`, `username`, `timestamp`) VALUES ('RA005', 'Rak A No. 005', 'Dibawah Rak A No. 001', '4771rakbaju.jpeg', 141, 'admin', '2022-11-04 02:34:15');
+INSERT INTO `master_location` (`id_loc`, `name_loc`, `description`, `pic`, `capacity`, `username`, `timestamp`) VALUES ('RA006', 'Rak A No. 006', 'Dibawah Rak A No. 002', '5435rakbaju.jpeg', 200, 'admin', '2022-11-04 02:35:21');
+INSERT INTO `master_location` (`id_loc`, `name_loc`, `description`, `pic`, `capacity`, `username`, `timestamp`) VALUES ('RA007', 'Rak A No. 007', 'Dibawah Rak A No. 003', '8843rakbaju.jpeg', 137, 'admin', '2022-11-04 02:36:44');
 COMMIT;
 
 -- ----------------------------
@@ -174,39 +174,40 @@ CREATE TABLE `master_stock` (
 -- Records of master_stock
 -- ----------------------------
 BEGIN;
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT001', 'IT001', 'RA001', 0, 30, 20, 10, 10, 'off', 'fauzan.n08', '2022-09-30 13:32:03');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT002', 'IT002', 'RA001', 0, 100, 50, 50, 50, 'off', 'fauzan.n08', '2022-11-04 01:59:33');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT003', 'IT003', 'RA001', 0, 100, 25, 75, 75, 'off', 'fauzan.n08', '2022-11-04 02:43:29');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT004', 'IT004', 'RA001', 0, 100, 25, 75, 75, 'off', 'fauzan.n08', '2022-11-04 02:18:16');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT005', 'IT005', 'RA002', 0, 40, 20, 20, 20, 'off', 'fauzan.n08', '2022-11-04 02:24:51');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT006', 'IT006', 'RA002', 0, 60, 40, 20, 20, 'off', 'fauzan.n08', '2022-11-04 23:05:00');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT007', 'IT007', 'RA002', 0, 100, 20, 80, 80, 'off', 'fauzan.n08', '2022-11-04 23:05:57');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT008', 'IT008', 'RA006', 0, 60, 20, 40, 40, 'off', 'fauzan.n08', '2022-11-05 09:45:48');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT009', 'IT009', 'RA006', 0, 50, 25, 25, 25, 'off', 'fauzan.n08', '2022-11-05 09:46:03');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT010', 'IT010', 'RA006', 0, 50, 25, 25, 25, 'off', 'fauzan.n08', '2022-11-05 09:46:17');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT011', 'IT011', 'RA006', 0, 50, 20, 30, 30, 'off', 'fauzan.n08', '2022-11-05 09:46:37');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT001', 'IT001', 'RA001', 10, 20, 5, 25, 25, 'off', 'fauzan.n08', '2022-11-05 11:10:12');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT002', 'IT002', 'RA001', 50, 50, 75, 25, 25, 'off', 'fauzan.n08', '2022-11-05 11:19:46');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT003', 'IT003', 'RA001', 75, 25, 75, 25, 25, 'off', 'fauzan.n08', '2022-11-05 11:20:03');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT004', 'IT004', 'RA001', 75, 0, 50, 25, 25, 'off', 'fauzan.n08', '2022-11-05 11:24:34');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT005', 'IT005', 'RA002', 20, 40, 40, 20, 20, 'off', 'fauzan.n08', '2022-11-05 11:30:47');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT006', 'IT006', 'RA002', 20, 0, 0, 20, NULL, 'on', 'fauzan.n08', '2022-11-04 23:05:00');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT007', 'IT007', 'RA002', 80, 20, 60, 40, 40, 'off', 'fauzan.n08', '2022-11-05 11:30:57');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT008', 'IT008', 'RA006', 40, 0, 30, 10, 10, 'off', 'fauzan.n08', '2022-11-05 11:31:01');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT009', 'IT009', 'RA006', 25, 5, 15, 15, 15, 'off', 'fauzan.n08', '2022-11-05 11:31:28');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT010', 'IT010', 'RA006', 25, 15, 25, 15, 15, 'off', 'fauzan.n08', '2022-11-05 11:31:34');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT011', 'IT011', 'RA006', 30, 0, 20, 10, 10, 'off', 'fauzan.n08', '2022-11-05 11:31:42');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT001', 'IT001', 'RA001', 25, 0, 0, 25, NULL, 'on', 'fauzan.n08', '2022-11-05 11:10:12');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT002', 'IT002', 'RA001', 25, 0, 0, 25, NULL, 'on', 'fauzan.n08', '2022-11-05 11:19:46');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT003', 'IT003', 'RA001', 25, 0, 0, 25, NULL, 'on', 'fauzan.n08', '2022-11-05 11:20:03');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT004', 'IT004', 'RA001', 25, 0, 0, 25, 0, 'on', 'fauzan.n08', '2022-11-05 11:24:34');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT005', 'IT005', 'RA002', 20, 0, 0, 20, 0, 'on', 'fauzan.n08', '2022-11-05 11:30:47');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT007', 'IT007', 'RA002', 40, 0, 0, 40, 0, 'on', 'fauzan.n08', '2022-11-05 11:30:57');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT008', 'IT008', 'RA006', 10, 0, 0, 10, 0, 'on', 'fauzan.n08', '2022-11-05 11:31:01');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT009', 'IT009', 'RA006', 15, 0, 0, 15, 0, 'on', 'fauzan.n08', '2022-11-05 11:31:28');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT010', 'IT010', 'RA006', 15, 0, 0, 15, 0, 'on', 'fauzan.n08', '2022-11-05 11:31:34');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT011', 'IT011', 'RA006', 10, 0, 0, 10, 10, 'on', 'fauzan.n08', '2022-11-05 12:09:57');
-INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT012', 'IT012', 'RA006', 20, 0, 0, 20, NULL, 'on', 'fauzan.n08', '2022-11-05 13:42:20');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT001', 'IT001', 'RA001', 0, 30, 20, 10, 10, 'off', 'admin', '2022-09-30 13:32:03');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT002', 'IT002', 'RA001', 0, 100, 50, 50, 50, 'off', 'admin', '2022-11-04 01:59:33');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT003', 'IT003', 'RA001', 0, 100, 25, 75, 75, 'off', 'admin', '2022-11-04 02:43:29');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT004', 'IT004', 'RA001', 0, 100, 25, 75, 75, 'off', 'admin', '2022-11-04 02:18:16');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT005', 'IT005', 'RA002', 0, 40, 20, 20, 20, 'off', 'admin', '2022-11-04 02:24:51');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT006', 'IT006', 'RA002', 0, 60, 40, 20, 20, 'off', 'admin', '2022-11-04 23:05:00');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT007', 'IT007', 'RA002', 0, 100, 20, 80, 80, 'off', 'admin', '2022-11-04 23:05:57');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT008', 'IT008', 'RA006', 0, 60, 20, 40, 40, 'off', 'admin', '2022-11-05 09:45:48');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT009', 'IT009', 'RA006', 0, 50, 25, 25, 25, 'off', 'admin', '2022-11-05 09:46:03');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT010', 'IT010', 'RA006', 0, 50, 25, 25, 25, 'off', 'admin', '2022-11-05 09:46:17');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202209IT011', 'IT011', 'RA006', 0, 50, 20, 30, 30, 'off', 'admin', '2022-11-05 09:46:37');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT001', 'IT001', 'RA001', 10, 20, 5, 25, 25, 'off', 'superadmin', '2022-11-08 20:03:13');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT002', 'IT002', 'RA001', 50, 50, 75, 25, 25, 'off', 'superadmin', '2022-11-08 20:05:48');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT003', 'IT003', 'RA001', 75, 25, 75, 25, 25, 'off', 'superadmin', '2022-11-08 20:05:53');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT004', 'IT004', 'RA001', 75, 0, 50, 25, 25, 'off', 'superadmin', '2022-11-08 20:07:46');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT005', 'IT005', 'RA002', 20, 40, 40, 20, 20, 'off', 'superadmin', '2022-11-08 20:08:47');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT006', 'IT006', 'RA002', 20, 0, 0, 20, 20, 'off', 'superadmin', '2022-11-08 20:08:42');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT007', 'IT007', 'RA002', 80, 20, 60, 40, 40, 'off', 'superadmin', '2022-11-08 20:08:12');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT008', 'IT008', 'RA006', 40, 0, 30, 10, 10, 'off', 'superadmin', '2022-11-08 20:08:29');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT009', 'IT009', 'RA006', 25, 5, 15, 15, 15, 'off', 'superadmin', '2022-11-08 20:08:06');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT010', 'IT010', 'RA006', 25, 15, 25, 15, 15, 'off', 'superadmin', '2022-11-08 20:08:00');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202210IT011', 'IT011', 'RA006', 30, 0, 20, 10, 10, 'off', 'superadmin', '2022-11-08 20:07:54');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT001', 'IT001', 'RA001', 25, 0, 0, 25, 0, 'on', 'superadmin', '2022-11-08 20:03:13');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT002', 'IT002', 'RA001', 25, 0, 0, 25, 0, 'on', 'superadmin', '2022-11-08 20:05:48');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT003', 'IT003', 'RA001', 25, 0, 0, 25, 0, 'on', 'superadmin', '2022-11-08 20:05:53');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT004', 'IT004', 'RA001', 25, 0, 0, 25, 0, 'on', 'superadmin', '2022-11-08 20:07:46');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT005', 'IT005', 'RA002', 20, 0, 0, 20, 0, 'on', 'superadmin', '2022-11-08 20:08:47');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT006', 'IT006', 'RA002', 20, 0, 0, 20, 0, 'on', 'superadmin', '2022-11-08 20:08:42');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT007', 'IT007', 'RA002', 40, 0, 0, 40, 0, 'on', 'superadmin', '2022-11-08 20:08:12');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT008', 'IT008', 'RA006', 10, 0, 0, 10, 0, 'on', 'superadmin', '2022-11-08 20:08:29');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT009', 'IT009', 'RA006', 15, 0, 0, 15, 0, 'on', 'superadmin', '2022-11-08 20:08:06');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT010', 'IT010', 'RA006', 15, 0, 0, 15, 0, 'on', 'superadmin', '2022-11-08 20:08:00');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT011', 'IT011', 'RA006', 10, 0, 0, 10, 0, 'on', 'superadmin', '2022-11-08 20:07:54');
+INSERT INTO `master_stock` (`id_stock`, `no_item`, `id_loc`, `qty_awal`, `qty_in`, `qty_out`, `qty_now`, `qty_actual`, `status`, `username`, `timestamp`) VALUES ('202211IT012', 'IT012', 'RA006', 0, 0, 0, 0, NULL, 'on', 'superadmin', '2022-11-08 20:11:14');
 COMMIT;
 
 -- ----------------------------
@@ -233,10 +234,46 @@ CREATE TABLE `master_user` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `master_user` (`id_user`, `username`, `password`, `name`, `level`, `no_telp`, `id_create`, `timestamp`, `stat`) VALUES ('US001', 'superadmin', '$2y$10$WHBoycpHJHU/Ke1R7VjHL.AGjAjvJ035XdQNQYOy.B2A4Jw9Pwy8e', 'superadmin', 'admin', '081280880874', 'superadmin', '2022-11-01 21:11:48', 'aktif');
-INSERT INTO `master_user` (`id_user`, `username`, `password`, `name`, `level`, `no_telp`, `id_create`, `timestamp`, `stat`) VALUES ('US002', 'fauzan.n08', '$2y$10$UhEWySrTJP3Ooump3lnEp.8OJ.nNWlWdjAcqeCUYTX/PapI2cqF1u', 'Fauzan Nurrachman', 'admin', '081280880874', 'superadmin', '2022-11-02 08:28:52', 'aktif');
+INSERT INTO `master_user` (`id_user`, `username`, `password`, `name`, `level`, `no_telp`, `id_create`, `timestamp`, `stat`) VALUES ('US002', 'admin', '$2y$10$UhEWySrTJP3Ooump3lnEp.8OJ.nNWlWdjAcqeCUYTX/PapI2cqF1u', 'admin', 'admin', '081280880874', 'superadmin', '2022-11-02 08:28:52', 'aktif');
 INSERT INTO `master_user` (`id_user`, `username`, `password`, `name`, `level`, `no_telp`, `id_create`, `timestamp`, `stat`) VALUES ('US003', 'picker', '$2y$10$DFifWzLIG/462Sgrjn7OBeaWmuVsaWayKT5/vgMTdatb46WyLqvpq', 'Picker', 'picker', '081280880874', 'superadmin', '2022-11-02 08:52:09', 'aktif');
 INSERT INTO `master_user` (`id_user`, `username`, `password`, `name`, `level`, `no_telp`, `id_create`, `timestamp`, `stat`) VALUES ('US004', 'auditor', '$2y$10$Ry32NSiHVBowBsLFvqIGTegqyt0HoCgvyl8jC3OEaAhJEPQbaxKsi', 'Auditor', 'auditor', '081280880874', 'superadmin', '2022-11-02 08:52:20', 'aktif');
 INSERT INTO `master_user` (`id_user`, `username`, `password`, `name`, `level`, `no_telp`, `id_create`, `timestamp`, `stat`) VALUES ('US005', 'qualitycontrol', '$2y$10$cnoXFZgzwJVGo5gODvOtt..jy8oRzia5fomdjKPCb9Cnx.RRXfD1.', 'Quality Control', 'quality control', '081280880874', 'superadmin', '2022-11-02 08:54:34', 'aktif');
+COMMIT;
+
+-- ----------------------------
+-- Table structure for po_detail
+-- ----------------------------
+DROP TABLE IF EXISTS `po_detail`;
+CREATE TABLE `po_detail` (
+  `no_order` varchar(10) NOT NULL,
+  `no_item` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of po_detail
+-- ----------------------------
+BEGIN;
+COMMIT;
+
+-- ----------------------------
+-- Table structure for po_header
+-- ----------------------------
+DROP TABLE IF EXISTS `po_header`;
+CREATE TABLE `po_header` (
+  `no_order` varchar(10) NOT NULL,
+  `price_buy_total` double DEFAULT NULL,
+  `username` varchar(50) DEFAULT NULL,
+  `timestamp` datetime DEFAULT NULL,
+  PRIMARY KEY (`no_order`),
+  KEY `fk_po_header_username` (`username`),
+  CONSTRAINT `fk_po_header_username` FOREIGN KEY (`username`) REFERENCES `master_user` (`username`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of po_header
+-- ----------------------------
+BEGIN;
+INSERT INTO `po_header` (`no_order`, `price_buy_total`, `username`, `timestamp`) VALUES ('2022110501', 90000, NULL, NULL);
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
